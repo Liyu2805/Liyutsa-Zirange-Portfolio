@@ -107,6 +107,11 @@ button:hover {
     transform: scale(1.2);
 }
 
+img {
+    width: 50px;
+    height: 45px;
+}
+
 
 /* =========================
    PROJECT GRID (IMPORTANT FIX)
