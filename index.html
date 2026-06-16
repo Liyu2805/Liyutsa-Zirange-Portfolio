@@ -1,273 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Portfolio</title>
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-  </head>
+</head>
 
-  <body>
-    <header style="color: #000000">
-      <h1><strong>&lt;/&gt; Hello World! &lt;/&gt;</strong></h1>
-      <h2 style="color: #ffffff">I'm <span class="highlight">Liyutsa Zirange</span></h2>
+<body>
 
-      <p style="color: #808080">
-        AI Engineer | Data Science Enthusiast | Full Stack Developer
-      </p>
+    <!-- HEADER -->
+    <header>
+        <h1>&lt;/&gt; Hello World! &lt;/&gt;</h1>
 
-      <br />
+        <h2>I'm <span class="highlight">Liyutsa Zirange</span></h2>
 
-      <p>
-        I build AI-powered systems, scalable web applications  <br />
-        and data-driven solutions that turn ideas into real products.
-      </p>
+        <p>AI Engineer | Data Science Enthusiast | Full Stack Developer</p>
 
-      <div class="button-container">
-        <button id="Contact">Contact Me</button>
-        <button onclick = "window.location.href='#project'" id="work">View My Work</button>
-      </div>
+        <p>
+            I build AI systems, web apps and data-driven solutions.
+        </p>
 
-      <div class="row">
-        <div class="column">
-          <a href="https://www.linkedin.com/in/liyutsa-zirange-bb1a76195">
-            <img src="assets/Linkedin.png" alt="Visit My Linkedin Page" />
-          </a>
+        <div class="button-container">
+            <button id="Contact">Contact Me</button>
+            <button onclick="window.location.href='#project'">View My Work</button>
         </div>
 
-        <div class="column">
-          <a href="https://github.com/Liyu2805">
-            <img src="assets/github_logo.png" alt="Visit My Github Page" />
-          </a>
-        </div>
+        <!-- SOCIAL -->
+        <div class="row">
+            <a href="https://www.linkedin.com">
+                <img src="assets/Linkedin.png" alt="LinkedIn" />
+            </a>
 
-        <div class="column">
-          <a href="mailto:Liyutsa@gmail.com">
-            <img src="assets/email_logo.jpg" alt="Visit My Email" />
-          </a>
+            <a href="https://github.com">
+                <img src="assets/github_logo.png" alt="GitHub" />
+            </a>
+
+            <a href="mailto:test@gmail.com">
+                <img src="assets/email_logo.jpg" alt="Email" />
+            </a>
         </div>
-      </div>
     </header>
 
-    <main style="color: #999696ff">
-      <!-- Featured Projects -->
+    <main>
 
-      <div class="animate-on-scroll">
+        <!-- PROJECTS -->
+        <section id="project" class="animate-on-scroll">
 
-      <h1 style="color: #ffffff; font-size: 60px">
-        Featured <span class="highlight">Projects</span>
-      </h1>
-      <p style="color: #808080">Some of my recent work and side Projects</p>
+            <h1>Featured <span class="highlight">Projects</span></h1>
+            <p>Some of my recent work</p>
 
-      <div id="project">
-      <div class="flex">
-        <div class="column">
-          <h1 style="color: #ffffff">My-Personal-Portfolio</h1>
-          <p>
-            A simple developer portfolio. This website showcases my Technical
-            skills and projects.
-          </p> <br>
+            <div class="projects-grid">
 
-          <div class="skillset">
-            <button class="skill">HTML</button>
-            <button class="skill">CSS</button>
-            <button class="skill">Javascript</button>
-          </div>
-          <br />
-          <div class="column">
-            <a href="https://github.com/Liyu2805/Liyutsa-Zirange-Portfolio">
-              <img src="assets/github_logo.png" alt="Visit My Github Page" />
-            </a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="flex">
-  <div class="column">
-    <h1 style="color: #ffffff">Bank Churn Prediction System</h1>
-    <p>
-      End-to-end machine learning system to predict customer churn using XGBoost.
-      Includes deployed Streamlit dashboard with real-time predictions and business insights.
-    </p>
+                <div class="flex">
+                    <h2>Portfolio Website</h2>
+                    <p>My personal developer portfolio.</p>
 
-    <div class="skillset">
-      <button class="skill">Python</button>
-      <button class="skill">Pandas</button>
-      <button class="skill">Scikit-learn</button>
-      <button class="skill">XGBoost</button>
-      <button class="skill">Streamlit</button>
-    </div>
+                    <div class="skillset">
+                        <button class="skill">HTML</button>
+                        <button class="skill">CSS</button>
+                        <button class="skill">JS</button>
+                    </div>
+                </div>
 
-    <br />
+                <div class="flex">
+                    <h2>Bank Churn ML System</h2>
+                    <p>XGBoost based churn prediction system.</p>
 
-    <div class="column">
-      <a href="https://github.com/Liyu2805/Bank-Customer-Churn-Prediction-System-End-to-End-ML-Project-">
-        <img src="assets/github_logo.png" alt="GitHub" />
-      </a>
-    </div>
-  </div>
-</div>
+                    <div class="skillset">
+                        <button class="skill">Python</button>
+                        <button class="skill">ML</button>
+                        <button class="skill">Streamlit</button>
+                    </div>
+                </div>
 
-      <div class="flex">
-  <div class="column">
-    <h1 style="color: #ffffff">Retail Sales Forecasting System</h1>
-    <p>
-      Machine learning web app predicting weekly retail sales using historical and economic features.
-      Built with Flask backend and deployed model pipeline.
-    </p>
+                <div class="flex">
+                    <h2>Retail Forecasting</h2>
+                    <p>Sales prediction using ML models.</p>
 
-    <div class="skillset">
-      <button class="skill">Python</button>
-      <button class="skill">Flask</button>
-      <button class="skill">Machine Learning</button>
-      <button class="skill">Pandas</button>
-      <button class="skill">Scikit-learn</button>
-    </div>
+                    <div class="skillset">
+                        <button class="skill">Flask</button>
+                        <button class="skill">Pandas</button>
+                        <button class="skill">ML</button>
+                    </div>
+                </div>
 
-    <br />
+                <div class="flex">
+                    <h2>Netflix Analysis</h2>
+                    <p>EDA on Netflix dataset.</p>
 
-    <div class="column">
-      <a href = "https://github.com/Liyu2805/Retail-Sales-Forecasting-System-End-to-End-ML-Web-App-">
-        <img src="assets/github_logo.png" alt="GitHub" />
-      </a>
-    </div>
-  </div>
-</div>
+                    <div class="skillset">
+                        <button class="skill">Pandas</button>
+                        <button class="skill">Seaborn</button>
+                        <button class="skill">Matplotlib</button>
+                    </div>
+                </div>
 
-<h1>Data Science & Analysis Projects</h1>
-<p>Exploratory and insight-driven data analysis projects</p>
+                <div class="flex">
+                    <h2>Delhi AQI Analysis</h2>
+                    <p>Air pollution trend analysis.</p>
 
-<div class="flex">
-  <div class="column">
-    <h1 style="color: #ffffff">Netflix User Behavior Analysis</h1>
+                    <div class="skillset">
+                        <button class="skill">Python</button>
+                        <button class="skill">EDA</button>
+                        <button class="skill">Data Viz</button>
+                    </div>
+                </div>
 
-    <p>
-      Data analysis project exploring Netflix viewing patterns, content distribution, and user behavior trends.
-      The project uncovers insights about genres, release patterns, and content growth using real dataset analysis.
-    </p>
+            </div>
+        </section>
 
-    <div class="skillset">
-      <button class="skill">Python</button>
-      <button class="skill">Pandas</button>
-      <button class="skill">NumPy</button>
-      <button class="skill">Matplotlib</button>
-      <button class="skill">Seaborn</button>
-      <button class="skill">Data Visualization</button>
-      <button class="skill">EDA</button>
-      <button class="skill">Jupyter Notebook</button>
-    </div>
+        <!-- SKILLS -->
+        <section class="animate-on-scroll">
 
-    <br />
+            <h1>Skills & <span class="highlight">Technologies</span></h1>
 
-    <div class="column">
-      <a href="https://github.com/Liyu2805/Netflix-User-Behavior-Analysis-">
-        <img src="assets/github_logo.png" alt="GitHub" />
-      </a>
-    </div>
-  </div>
-</div>
+            <div class="project-skillset">
+                <h3>Frontend</h3>
+                <div class="skillset">
+                    <button class="skill">HTML</button>
+                    <button class="skill">CSS</button>
+                    <button class="skill">JavaScript</button>
+                </div>
+            </div>
 
-<div class="flex">
-  <div class="column">
-    <h1 style="color: #ffffff">Delhi Air Quality Index Analysis</h1>
+            <div class="project-skillset">
+                <h3>Backend</h3>
+                <div class="skillset">
+                    <button class="skill">Flask</button>
+                    <button class="skill">MySQL</button>
+                    <button class="skill">MongoDB</button>
+                </div>
+            </div>
 
-    <p>
-      Exploratory Data Analysis project focused on understanding air pollution trends across Delhi.
-      The project analyzes pollutant levels over time and across regions to identify environmental patterns and insights.
-    </p>
+            <div class="project-skillset">
+                <h3>Data Science</h3>
+                <div class="skillset">
+                    <button class="skill">NumPy</button>
+                    <button class="skill">Pandas</button>
+                    <button class="skill">Matplotlib</button>
+                    <button class="skill">Seaborn</button>
+                </div>
+            </div>
 
-    <div class="skillset">
-      <button class="skill">Python</button>
-      <button class="skill">Pandas</button>
-      <button class="skill">NumPy</button>
-      <button class="skill">Matplotlib</button>
-      <button class="skill">Seaborn</button>
-      <button class="skill">EDA</button>
-      <button class="skill">Jupyter Notebook</button>
-    </div>
+        </section>
 
-    <br />
+        <!-- CONNECT -->
+        <section class="animate-on-scroll">
 
-    <div class="column">
-      <a href = "https://github.com/Liyu2805/Delhi-AQI-Analysis-" 
-        <img src="assets/github_logo.png" alt="GitHub" />
-      </a>
-    </div>
-  </div>
-</div>
-    <div class = "animate-on-scroll">
-      <!-- Skills Section -->
-      <h1 style="color: #ffffff; font-size: 60px">
-        Skills & <span class="highlight">Technologies</span>
-      </h1>
-      <p style="color: #808080">Tools and Technologies I work with</p>
+            <h1>Let's <span class="highlight">Connect</span></h1>
 
-      <div class="project-skillset">
-        <h3>Frontend</h3>
-        <div class="skillset">
-        <button class="skill">HTML</button>
-        <button class="skill">CSS</button>
-        <button class="skill">Javascript</button>
-      </div>
-    </div>
+            <p>Have a project in mind? Let's build something together!</p>
 
-      <br />
+            <p>Email: Liyutsa@gmail.com</p>
 
-        <div class="project-skillset">
-        <h3>Backend</h3>
-        <div class="skillset">
-        <button class="skill">Flask</button>
-        <button class="skill">MySQL</button>
-        <button class="skill">MongoDB</button>
-      </div>
-    </div>
+            <button onclick="window.location.href='mailto:Liyutsa@gmail.com'">
+        Send Message
+      </button>
 
-      <br />
+        </section>
 
-      <div class="project-skillset">
-        <h3>Data Science Tools & Others</h3>
-        <div class="skillset">
-        <button class="skill">Numpy</button>
-        <button class="skill">Pandas</button>
-        <button class="skill">Matplotlib</button>
-        <button class="skill">Seaborn</button>
-        <button class="skill">Machine Learning (Basics)</button>
-        <button class="skill">EDA</button>
-        <button class="skill">Jupyter Notebook</button>
-        <button class="skill">Google Colab</button>
-      </div>
-    </div>
-    </div>
-
-    <div class = "animate-on-scroll">
-      <!-- Connect Section -->
-      <h1 style="color: #ffffff; font-size: 60px">
-        Let's <span class="highlight">Connect</span>
-      </h1>
-      <p style="color: #808080">
-        Have a project in mind? Let's build something amazing together!
-      </p>
-
-      <div class="connect">
-          <p>Email : Liyutsa@gmail.com</p>
-        </div>
-
-      <div class="msg">
-        <p>
-          I'm always interested in hearing about new projects <br />
-          and opportunities. Whether you have a question or <br />
-          just want to say hi, feel free to reach out!
-        </p> <br>
-        <button onclick="window.location.href='mailto:Liyutsa@gmail.com'">➤ Send Message</button>
-      </div>
-      </div>
     </main>
 
-    <footer style="color: #000000">
-      <p style="color: #808080">
-        ©2026 Liyutsa Zirange. Built with HTML, CSS & Javascript
-      </p>
+    <footer>
+        <p>©2026 Liyutsa Zirange. Built with HTML, CSS & JavaScript</p>
     </footer>
-  </body>
+
+</body>
+
 </html>
