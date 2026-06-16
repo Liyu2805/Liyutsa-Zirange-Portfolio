@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,42 +11,41 @@
 <body>
     <div class="cnt">
         <div class="contact-info-box">
-            <h1 style="color: #ffffff; font-size: 50px; text-align: center;">
-                Get in <span class="highlight">Touch</span>
-            </h1>
+            <h1>Get in <span class="highlight">Touch</span></h1>
+            <h2>Liyutsa Zirange</h2>
+            <h3>Maharashtra, India</h3>
 
-            <h2 style="text-align:center;">Liyutsa Zirange</h2>
-            <h3 style="text-align:center;">Maharashtra, India</h3>
-
-            <div class="row" style="margin-top: 20px;">
-                <div class="column">
-                    <button onclick="window.location.href='https://github.com/Liyu2805'">GitHub</button>
-                    <br><br>
-                    <button onclick="window.location.href='https://www.linkedin.com/in/liyutsa-zirange-bb1a76195'">LinkedIn</button>
-                </div>
+            <div class="social-buttons">
+                <button onclick="window.location.href='https://github.com/Liyu2805'">GitHub</button>
+                <button onclick="window.location.href='https://www.linkedin.com/in/liyutsa-zirange-bb1a76195'">LinkedIn</button>
             </div>
         </div>
-        
+
         <div class="cntform">
-        <p style="color: #808080; text-align: center; margin-top: 20px;">
-                I'd love to hear from you! Whether you have a question, want to discuss a project, 
-                or just want to say hello, feel free to reach out.
-        </p>
-<br><br>
+            <p class="form-intro">
+                I'd love to hear from you! Whether you have a question, want to discuss a project, or just want to say hello, feel free to reach out.
+            </p>
+
             <form action="https://formspree.io/f/meobkaeb" method="POST">
+                <div class="form-group">
+                    <label for="name" class="label-text">Your name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
 
-                <label class="label-text">Your name:</label>
-                <input type="text" name="name" id="name" required>
+                <div class="form-group">
+                    <label for="email" class="label-text">Your email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-                <label class="label-text">Your email:</label>
-                <input type="email" name="email" id="email" required>
+                <div class="form-group">
+                    <label for="message" class="label-text">Your message:</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>
+                </div>
 
-                <label class="label-text">Your message:</label>
-                <textarea name="message" id="message" required></textarea>
-
-                <button type="submit" style="margin-top: 10px;">Send</button>
+                <button type="submit" class="submit-btn">Send</button>
             </form>
         </div>
-
+    </div>
 </body>
+
 </html>
