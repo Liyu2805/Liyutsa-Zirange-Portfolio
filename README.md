@@ -3,7 +3,7 @@
 A modern, responsive personal portfolio website showcasing my skills, projects, and experience in Full Stack Development and Data Science.
 
 ## 🚀 Live Demo
-https://liyutsa-portfolio.netlify.app/
+https://liyutsa-zirange.netlify.app/
 
 ---
 
